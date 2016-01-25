@@ -4,8 +4,8 @@
 %{?nodejs_find_provides_and_requires}
 
 Name:           %{?scl_prefix}nodejs-config-chain
-Version:        1.1.8
-Release:        2%{?dist}
+Version:        1.1.9
+Release:        1%{?dist}
 Summary:        Handle configuration once and for all
 BuildArch:      noarch
 ExclusiveArch: %{nodejs_arches} noarch
@@ -46,6 +46,9 @@ rm -rf %buildroot
 %doc LICENCE readme.markdown
 
 %changelog
+* Mon Nov 30 2015 Tomas Hrcka <thrcka@redhat.com> - 1.1.9-1
+- New upsteram release
+
 * Tue Mar 04 2014 Tomas Hrcka <thrcka@redhat.com> - 1.1.8-2
 - Add missing nodejs_symlink_deps macro
 
