@@ -5,7 +5,7 @@
 
 Name:           %{?scl_prefix}nodejs-config-chain
 Version:        1.1.9
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Handle configuration once and for all
 BuildArch:      noarch
 ExclusiveArch: %{nodejs_arches} noarch
@@ -46,6 +46,9 @@ rm -rf %buildroot
 %doc LICENCE readme.markdown
 
 %changelog
+* Sun Feb 14 2016 Zuzana Svetlikova <zsvetlik@redhat.com> - 1.1.9-2
+- rebuilt
+
 * Mon Nov 30 2015 Tomas Hrcka <thrcka@redhat.com> - 1.1.9-1
 - New upsteram release
 
